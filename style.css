@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: f1;
+    src: url(fonte/ethnocentric\ rg.otf);
+
+}
+
+@font-face {
+    font-family: f2;
+    src: url(fonte/PirataOne-Regular.ttf);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f7f8fc;
+}
+
+h1{
+    font-size: 25px;
+    font-family: f1;
+    margin-top: -5px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 40px;
+    background-color: #89bb99;
+    width: 1300px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.corpo {
+    background-color: #89bb99;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 100px;
+    border-radius: 35px;
+}
+
+label{
+    font-size: 20px;
+    margin-left: 115px;
+}
+
+button{
+    margin-top: 25px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+p{
+    margin-left: 180px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+input {
+    border-radius: 7px;
+}
+
+footer {
+    margin-top: 160px;
+    margin-left: 350px;
+    font-size: 35px;
+    font-family: f2;
+}
+
+.dark-mode {
+    background-color: dimgray;
+}
+
+.dark-mode h1 {
+    color: aliceblue;
+}
+
+.dark-mode header {
+    background-color: #5a7f78;
+}
+
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background-color: #5a7f78;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dark-mode .corpo{
+    background-color: #5a7f78;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.toggle-btn:checked+.toggle-label {
+    background-color: darkcyan;
+}
+
+.toggle-btn:checked+.toggle-label:before {
+    background-color: chartreuse;
+    transform: translateX(30px);
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.dark-mode {
+    background-color: #314c53;
+}

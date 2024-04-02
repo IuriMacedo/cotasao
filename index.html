@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter R$ para U$</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Conversão de Real para Dólar</h1>
+        <input type="checkbox" name="#" id="toggle-mode" class="toggle-btn">
+        <label for="toggle-mode" class="toggle-label"></label>
+    </header>
+
+    <div class="corpo">
+        <label for="valorReal">R$:</label>
+        <input type="number" name="" id="valorReal">
+        <br>
+
+        <button onclick="calcularConversao()">Calcular</button>
+
+        <p>
+            U$: <span id="resultado"></span>
+        </p>
+
+    </div>
+
+    <script src="crd.js"></script>
+
+<footer>
+    <p>
+        Desenvolvido por Iuri Macedo| 02/04/2024
+    </p>
+</footer>
+
+</body>
+
+</html>
